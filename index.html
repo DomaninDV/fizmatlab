@@ -1,88 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Физматлаб | Премиум-курсы по физике</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Развитие интеллекта | SuperMind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Шапка -->
-  <header class="dark-header">
-    <div class="container">
-      <a href="/" class="logo">
-        <span class="blue-text">Физ</span>матлаб
-      </a>
-      <nav>
-        <a href="courses.html" class="nav-link">Курсы</a>
-        <a href="#" class="nav-link">Блог</a>
-        <a href="#" class="btn-outline">Войти</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Герой-секция -->
-  <section class="hero dark-bg">
-    <div class="container">
-      <h1><span class="blue-text">Физика</span> станет понятной</h1>
-      <p>Курсы для студентов и школьников от создателя канала <span class="blue-text">Физматлаб</span></p>
-      <a href="courses.html" class="btn-glow">Выбрать курс →</a>
-      <div class="video-preview">
-        <i class="fas fa-play blue-text"></i>
-      </div>
-    </div>
-  </section>
-
-  <!-- Преимущества -->
-  <section class="features">
-    <div class="container">
-      <div class="feature-card">
-        <i class="fas fa-atom blue-text"></i>
-        <h3>Глубокий разбор</h3>
-        <p>От основ до олимпиадных задач</p>
-      </div>
-      <div class="feature-card">
-        <i class="fas fa-video blue-text"></i>
-        <h3>100+ видео</h3>
-        <p>Доступ навсегда</p>
-      </div>
-      <div class="feature-card">
-        <i class="fas fa-headset blue-text"></i>
-        <h3>Поддержка</h3>
-        <p>Ответы на вопросы</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Популярные курсы -->
-  <section class="courses dark-bg">
-    <div class="container">
-      <h2>Топ-<span class="blue-text">курсы</span></h2>
-      <div class="course-grid">
-        <div class="course-card">
-          <div class="course-badge">Бестселлер</div>
-          <img src="images/quantum.jpg" alt="Квантовая физика">
-          <div class="course-content">
-            <h3>Квантовая механика</h3>
-            <div class="price">4 900 ₽</div>
-            <a href="#" class="btn-small">Купить</a>
-          </div>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">SuperMind</div>
+            <nav>
+                <a href="#about">О курсе</a>
+                <a href="#program">Программа</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#price">Цены</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <button class="cta-button">Записаться</button>
         </div>
-        <!-- Добавь больше курсов -->
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Футер -->
-  <footer class="dark-footer">
-    <div class="container">
-      <div class="social">
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-telegram"></i></a>
-      </div>
-      <p>© 2024 Физматлаб. Все права защищены</p>
-    </div>
-  </footer>
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1>Раскрой потенциал своего мозга!</h1>
+            <p>Научись мыслить быстрее, запоминать больше и принимать гениальные решения.</p>
+            <button class="cta-button">Попробовать бесплатно</button>
+        </div>
+    </section>
+
+    <!-- О курсе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Что вы получите?</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-brain"></i>
+                    <h3>Улучшение памяти</h3>
+                    <p>Техники запоминания информации в 3 раза быстрее.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Креативное мышление</h3>
+                    <p>Научитесь находить нестандартные решения.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Повышение IQ</h3>
+                    <p>Доказанные методики для развития интеллекта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Программа курса -->
+    <section id="program" class="program">
+        <div class="container">
+            <h2>Программа обучения</h2>
+            <div class="modules">
+                <div class="module">
+                    <h3>Модуль 1: Основы памяти</h3>
+                    <ul>
+                        <li>Как работает память</li>
+                        <li>Метод Цицерона</li>
+                        <li>Мнемотехники</li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <h3>Модуль 2: Логика и анализ</h3>
+                    <ul>
+                        <li>Решение сложных задач</li>
+                        <li>Критическое мышление</li>
+                        <li>Алгоритмы принятия решений</li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <h3>Модуль 3: Креативность</h3>
+                    <ul>
+                        <li>Техники генерации идей</li>
+                        <li>Мозговые штурмы</li>
+                        <li>Развитие интуиции</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Отзывы наших учеников</h2>
+            <div class="review-cards">
+                <div class="review">
+                    <p>"Курс изменил мой подход к обучению. Теперь я запоминаю всё с первого раза!"</p>
+                    <div class="author">— Анна, 28 лет</div>
+                </div>
+                <div class="review">
+                    <p>"После курса мой IQ вырос на 15 пунктов. Рекомендую!"</p>
+                    <div class="author">— Максим, 35 лет</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены -->
+    <section id="price" class="price">
+        <div class="container">
+            <h2>Выберите тариф</h2>
+            <div class="plans">
+                <div class="plan">
+                    <h3>Базовый</h3>
+                    <p class="cost">5 000 ₽</p>
+                    <ul>
+                        <li>Доступ к урокам</li>
+                        <li>Практические задания</li>
+                        <li>Поддержка в чате</li>
+                    </ul>
+                    <button class="cta-button">Купить</button>
+                </div>
+                <div class="plan popular">
+                    <h3>Продвинутый</h3>
+                    <p class="cost">10 000 ₽</p>
+                    <ul>
+                        <li>Всё из Базового</li>
+                        <li>Обратная связь от эксперта</li>
+                        <li>Дополнительные материалы</li>
+                    </ul>
+                    <button class="cta-button">Купить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Частые вопросы</h2>
+            <div class="faq-item">
+                <h3>Смогу ли я улучшить интеллект за месяц?</h3>
+                <p>Да, первые результаты будут уже через 2-3 недели.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Нужна ли подготовка?</h3>
+                <p>Нет, курс подходит для любого уровня.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SuperMind</div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
