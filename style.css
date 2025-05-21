@@ -1,10 +1,17 @@
-/* Общие стили */
+/* Базовые настройки */
+:root {
+  --dark: #0a0a0a;
+  --darker: #111;
+  --blue: #2563eb;
+  --blue-light: #3b82f6;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  background: var(--dark);
+  color: white;
   margin: 0;
-  padding: 0;
   line-height: 1.6;
-  color: #333;
 }
 
 .container {
@@ -13,82 +20,130 @@ body {
   margin: 0 auto;
 }
 
-/* Шапка */
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem 0;
+/* Текст с синим акцентом */
+.blue-text {
+  color: var(--blue-light);
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Шапка */
+.dark-header {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
   text-decoration: none;
+  color: white;
 }
 
-nav a {
-  color: white;
-  margin-left: 1rem;
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 2rem;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--blue-light);
+}
+
+.btn-outline {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  margin-left: 2rem;
 }
 
 /* Герой-секция */
 .hero {
-  background: #3498db;
-  color: white;
+  padding: 12rem 0 8rem;
   text-align: center;
-  padding: 4rem 0;
+  background: linear-gradient(to right, #000, #1e3a8a);
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
-.btn {
-  display: inline-block;
-  background: #e74c3c;
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn-glow {
+  background: var(--blue);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+  transition: 0.3s;
 }
 
-/* Карточки курсов */
-.courses-preview {
-  padding: 2rem 0;
+.btn-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.7);
 }
 
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+.video-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto 0;
+  cursor: pointer;
+}
+
+/* Карточки */
+.features {
+  padding: 5rem 0;
+}
+
+.feature-card {
+  background: var(--darker);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  margin: 0 1%;
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .course-card {
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background: var(--darker);
+  border-radius: 12px;
   overflow: hidden;
-  padding: 1rem;
+  width: 31%;
+  margin: 1%;
+  position: relative;
 }
 
-.course-card img {
-  width: 100%;
-  height: auto;
-}
-
-/* Подвал */
-footer {
-  background: #2c3e50;
+.course-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--blue);
   color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.
