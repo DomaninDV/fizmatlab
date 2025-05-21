@@ -3,52 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Физматлаб — Курсы по физике</title>
+  <title>Физматлаб | Премиум-курсы по физике</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
+  <!-- Шапка -->
+  <header class="dark-header">
     <div class="container">
-      <a href="/" class="logo">Физматлаб</a>
+      <a href="/" class="logo">
+        <span class="blue-text">Физ</span>матлаб
+      </a>
       <nav>
-        <a href="courses.html">Курсы</a>
-        <a href="blog.html">Блог</a>
-        <a href="contacts.html">Контакты</a>
+        <a href="courses.html" class="nav-link">Курсы</a>
+        <a href="#" class="nav-link">Блог</a>
+        <a href="#" class="btn-outline">Войти</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <!-- Герой-секция -->
+  <section class="hero dark-bg">
     <div class="container">
-      <h1>Онлайн-курсы по физике</h1>
-      <p>Разберитесь в сложных темах и сдайте экзамены на отлично!</p>
-      <a href="courses.html" class="btn">Выбрать курс</a>
-    </div>
-  </section>
-
-  <section class="courses-preview">
-    <div class="container">
-      <h2>Популярные курсы</h2>
-      <div class="course-grid">
-        <div class="course-card">
-          <img src="images/mechanics.jpg" alt="Механика">
-          <h3>Механика для начинающих</h3>
-          <p>Основы кинематики и динамики.</p>
-          <a href="course-detail.html" class="btn">Подробнее</a>
-        </div>
-        <div class="course-card">
-          <img src="images/electrodynamics.jpg" alt="Электродинамика">
-          <h3>Электродинамика</h3>
-          <p>Закон Ома, цепи, магнетизм.</p>
-          <a href="course-detail.html" class="btn">Подробнее</a>
-        </div>
+      <h1><span class="blue-text">Физика</span> станет понятной</h1>
+      <p>Курсы для студентов и школьников от создателя канала <span class="blue-text">Физматлаб</span></p>
+      <a href="courses.html" class="btn-glow">Выбрать курс →</a>
+      <div class="video-preview">
+        <i class="fas fa-play blue-text"></i>
       </div>
     </div>
   </section>
 
-  <footer>
+  <!-- Преимущества -->
+  <section class="features">
     <div class="container">
-      <p>© 2024 Физматлаб. Все права защищены.</p>
+      <div class="feature-card">
+        <i class="fas fa-atom blue-text"></i>
+        <h3>Глубокий разбор</h3>
+        <p>От основ до олимпиадных задач</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-video blue-text"></i>
+        <h3>100+ видео</h3>
+        <p>Доступ навсегда</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-headset blue-text"></i>
+        <h3>Поддержка</h3>
+        <p>Ответы на вопросы</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Популярные курсы -->
+  <section class="courses dark-bg">
+    <div class="container">
+      <h2>Топ-<span class="blue-text">курсы</span></h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="course-badge">Бестселлер</div>
+          <img src="images/quantum.jpg" alt="Квантовая физика">
+          <div class="course-content">
+            <h3>Квантовая механика</h3>
+            <div class="price">4 900 ₽</div>
+            <a href="#" class="btn-small">Купить</a>
+          </div>
+        </div>
+        <!-- Добавь больше курсов -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="dark-footer">
+    <div class="container">
+      <div class="social">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+      </div>
+      <p>© 2024 Физматлаб. Все права защищены</p>
     </div>
   </footer>
 </body>
